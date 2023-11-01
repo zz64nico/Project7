@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:background="@drawable/baseline_delete_24"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:hint="Title"
+            android:layout_margin="@dimen/dp_10"
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:hint="Description"
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <Button
+            android:layout_margin="@dimen/dp_10"
+            android:id="@+id/btn_add"
+            android:text="save"
+            android:onClick="save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</layout>
